@@ -1,0 +1,33 @@
+{
+  "compilerOptions": {
+    "outDir": "./lib",
+    "esModuleInterop": true,
+    "sourceMap": true,
+    "module": "CommonJS",
+    "target": "ES2015",
+    "experimentalDecorators": true,
+    "skipLibCheck": true,
+    "downlevelIteration": true,
+    "moduleResolution": "node",
+    "jsx": "preserve",
+    "lib": ["esnext","ES2015"],
+    "allowJs": true,
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "strictNullChecks": true,
+    "forceConsistentCasingInFileNames": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": false,
+    "typeRoots": ["./src/types", "./node_modules/@types"],
+    "baseUrl": "./",
+    "paths": {
+      "lib/*": ["lib/*"],
+    }
+  },
+  "include": ["src"],
+  "exclude": ["node_modules", "lib"],
+  "ts-node": {
+    "require": ["tsconfig-paths/register"]
+  }
+}
